@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>test editor</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+<body>
+
+  <div id="grid">
+    
+  </div>
+  <div id="drop-area">
+    <input type="file">
+    <div id="inner">
+      json сюда
+    </div>
+  </div>
+   
+  <div id="info">
+    <br><br>
+    <label>hash:</label>
+    <span id="span-hash">пусто</span>
+    <br><br>
+    <!-- TODO: сделать форму с произвольным количеством полей -->
+    <label>value:</label>
+    <input id="edit-info" value="пусто">
+    <br><br><br>
+    <input class="styled save" type="button"
+       value="Save object" onclick="buttonRecordSaveClick()">
+    <br><br><br>
+    <input class="styled export" type="button"
+       value="Export file" onclick="exportFileContent()">
+  </div>
+  <script src="main.js" type = "text/javascript"></script>
+</body>
+</html>

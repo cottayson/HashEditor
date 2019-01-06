@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: Verdana;
+}
+
+div {
+  border: red 1px solid;
+}
+
+input[type="file"] {
+  position: absolute;
+  color: black;
+  top: 10%; /* доделать позиционирование элемента */
+  left: 10%;
+}
+
+#drop-area {
+  position: absolute;
+  display: block;
+  border: black 3px dashed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  
+  text-align: center;
+  color: lightgray;
+}
+
+#inner {
+  /*доделать центрирование по горизонтали и вертикали*/
+  top: 45%;
+  text-align: center;
+  position: relative;
+  font-size: 50px;
+}
+
+.record {
+  padding: 5px;
+  font-size: 30px;
+}
+
+.record:hover {
+  background-color: lightgray;
+}
+
+#edit-info, #span-hash {
+  /* сделать выравнивание */
+  position: absolute;
+  margin-left: 15px;
+}
+
+#edit-info {
+  width: 50%;
+}
+
+#grid {
+  /* полоса прокрутки */
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 30%;
+  height: 100%;
+  
+}
+
+#info {
+  display: none;/*UI изначально не показывается*/
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 70%;
+  height: 100%;
+  border: blue 1px solid;
+}
+
+.styled {
+    float: right; /*выравнивание относительно правого края*/
+    margin-right: 10%;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 30px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+/*цвета кнопки Save object*/
+.save {
+  background-color: rgba(120, 120, 120, 1);
+}
+
+.save:hover {
+    background-color: rgba(150, 150, 150, 1);
+}
+
+/*цвета кнопки Export file*/
+.export {
+  background-color: rgba(120, 120, 120, 1);
+}
+
+.export:hover {
+  background-color: rgba(150, 150, 150, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
